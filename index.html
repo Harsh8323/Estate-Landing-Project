@@ -4,11 +4,72 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Estate Page</title>
   </head>
   <body>
-    <div id="app">landing page</div>
+    <!-- nav-section -->
+    <nav>
+      <div class="container main-nav flex">
+        <div class="left-section flex">
+          <div class="logo flex">
+            <a href="#" class="company-logo">
+              <img src="./public/images/Left Nav.png" alt="company-logo" />
+            </a>
+          </div>
+          <div class="nav-links" id="nav-links">
+            <ul class="flex">
+              <li><a href="#" class="hover-link">Rent</a></li>
+              <li><a href="#" class="hover-link">Buy</a></li>
+              <li><a href="#" class="hover-link">Sell</a></li>
+              <li>
+                <a href="#" class="hover-link">Manage Property</a>
+              </li>
+              <li><a href="#" class="hover-link">Resources</a></li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="nav-button flex">
+            <ul class="flex">
+              <li><a href="#" class="secondary-button">Login</a></li>
+              <li><a href="#" class="primary-button">Sign Up</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header-section -->
+    <header>
+      <div class="container header flex">
+        <h1 class="flex">Buy, rent, or sell your property easily</h1>
+        <p>A great platform to buy, sell, or even rent your properties without any commisions.</p>
+      </div>
+    </header>
+
+    <section class="browse">
+      <div class="container flex">
+        <div class="card flex">
+          <div class="tabs flex">
+            <a href="#">Rent</a>
+            <a href="#">Buy</a>
+            <a href="#">Sell</a>
+          </div>
+          <div class="search flex">
+            <p>location</p>
+            <p>Bracelona,Spain</p>
+            <p>When</p>
+            <p>Select Move-in Date</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats"></section>
+
+    <section class="hero-img">
+
+    </section>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

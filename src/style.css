@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #000929;
+  --secondary-text-color: #E0DEF7;
+  --accent-color: #7065F0;
+  --accent-color-dark: #100A55;
+  --padding-line-section: 20px;
+}
+
+body {
+  font-family:'Plus Jakarta Sans';
+  background-color: #FFFFFF;
+  
+  
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  
+}
+
+
+/* utility-classes */
+
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.container {
+  background-color:#FFFFFF;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-line-section);
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  font-weight: 700;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+  text-align: center;
+}
+
+.secondary-button {
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(--primary-text-color) !important;
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+
+
+/* nav-section */
+.main-nav {
+  max-width: 100%;
+  height: 4.5rem;
+  background-color: #edecfb;
+  /* position: relative; */
+  gap: 40px;
+  justify-content: space-between;
+  /* align-items:; */
+  
+}
+
+.left-section{
+  justify-content:space-between;
+  gap:2rem;
+  align-items: center;
+}
+.company-logo img {
+  width: 131px;
+}
+
+.nav-links ul {
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-button ul {
+  justify-content:space-between;
+  gap:1.5rem;
+}
+
+/* header-section */
+
+.header{
+  color: var(--primary-text-color);
+  margin-top: 88px;
+  margin-left: 167px;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* browse-section */
+
+.tabs{
+  margin-top: 1rem;
+  color: var(--primary-text-color);
+  gap: 1rem;
+  background-color:#fdecec;
+  width: 297px;
+  height: 56px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.search{
+  gap: 1rem;
+  flex-direction: column;
+}
