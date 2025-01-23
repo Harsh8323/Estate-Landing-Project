@@ -8,68 +8,137 @@
     <title>Estate Page</title>
   </head>
   <body>
-    <!-- nav-section -->
-    <nav>
-      <div class="container main-nav flex">
-        <div class="left-section flex">
-          <div class="logo flex">
+    <!-- hero-section -->
+    <div class="hero-section">
+      <nav>
+        <div class="container main-nav flex">
+          <div class="left-section flex">
             <a href="#" class="company-logo">
               <img src="./public/images/Left Nav.png" alt="company-logo" />
             </a>
+            <div class="nav-links" id="nav-links">
+              <ul class="flex">
+                <li><a href="#" class="hover-link">Rent</a></li>
+                <li><a href="#" class="hover-link">Buy</a></li>
+                <li><a href="#" class="hover-link">Sell</a></li>
+                <li>
+                  <a href="#" class="dropdown hover-link">
+                    Manage Property
+                    <i class="fa-solid fa-caret-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown hover-link">
+                    Resources
+                    <i class="fa-solid fa-caret-down"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="nav-links" id="nav-links">
-            <ul class="flex">
-              <li><a href="#" class="hover-link">Rent</a></li>
-              <li><a href="#" class="hover-link">Buy</a></li>
-              <li><a href="#" class="hover-link">Sell</a></li>
-              <li>
-                <a href="#" class="hover-link">Manage Property</a>
-              </li>
-              <li><a href="#" class="hover-link">Resources</a></li>
-            </ul>
-          </div>
-        </div>
 
           <div class="nav-button flex">
             <ul class="flex">
               <li><a href="#" class="secondary-button">Login</a></li>
               <li><a href="#" class="primary-button">Sign Up</a></li>
             </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- header-section -->
-    <header>
-      <div class="container header flex">
-        <h1 class="flex">Buy, rent, or sell your property easily</h1>
-        <p>A great platform to buy, sell, or even rent your properties without any commisions.</p>
-      </div>
-    </header>
-
-    <section class="browse">
-      <div class="container flex">
-        <div class="card flex">
-          <div class="tabs flex">
-            <a href="#">Rent</a>
-            <a href="#">Buy</a>
-            <a href="#">Sell</a>
-          </div>
-          <div class="search flex">
-            <p>location</p>
-            <p>Bracelona,Spain</p>
-            <p>When</p>
-            <p>Select Move-in Date</p>
           </div>
         </div>
+      </nav>
+
+      <!-- content-section -->
+      <div class="content flex">
+        <div class="left-content">
+          <div class="left-content-text flex">
+            <h1 class="flex">
+              Buy, rent, or sell <br />
+              your property easily
+            </h1>
+            <p class="flex">
+              A great platform to buy, sell, or even rent your properties
+              without any commisions.
+            </p>
+          </div>
+          <div class="left-content-search flex">
+            <div class="tabs flex">
+              <a href="#">Rent</a>
+              <a href="#">Buy</a>
+              <a href="#">Sell</a>
+            </div>
+            <div class="search-bar flex">
+              <div class="location flex">
+                <a href="#">Location</a>
+                <a href="#">Barcelona, Spain</a>
+              </div>
+              <div class="timing flex">
+                <!-- <label for="move-in-date">When</label>
+                <input type="date" id="move-in-date" name="move-in-date" placeholder="Select Move-in Date"  /> -->
+                <p>When</p>
+                <a href="#"
+                  >Select Move-in Date <i class="fa-regular fa-calendar"></i
+                ></a>
+              </div>
+              <div class="browse-button flex">
+                <a href="#" class="primary-button">Browse Properties</a>
+              </div>
+            </div>
+          </div>
+          <div class="left-content-stats flex">
+            <div class="numbers flex">
+              <img src="./public/images/renter Icon.png" alt="" />
+              <h4>50k+ renters</h4>
+              <p>believe in our service</p>
+            </div>
+            <div class="properties flex">
+              <img src="./public/images/property Icon.png" alt="" />
+              <h4>10k+ properties</h4>
+              <p>and house ready for occupancy</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-content">
+          <img
+            src="/public/images/Testimonial.png"
+            class="testimonial-img"
+            alt="testimonial-img"
+          />
+          <img
+            src="/public/images/Trustpilot.png"
+            class="trustpilot-img"
+            alt="trustpilot-img"
+          />
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="stats"></section>
+    <!-- benefit-section-->
+    <div class="benefit-section">
+      <div class="benefits">
+        <div class="row1 flex">
+          <div class="benefit-1">
+            <img src="./public/images/Icon 1.png" alt="property-img" />
+            <h4>Property Insurance</h4>
+            <p>
+              We offer our customer property protection of liability coverage
+              and insurance for their better life.
+            </p>
+          </div>
+          <div class="benefit-2">
+            <img src="./public/images/Icon 1.png" alt="property-img" />
+            <h4>Property Insurance</h4>
+            <p>
+              We offer our customer property protection of liability coverage
+              and insurance for their better life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <section class="hero-img">
-
-    </section>
+    <script
+      src="https://kit.fontawesome.com/f9ae479a42.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
