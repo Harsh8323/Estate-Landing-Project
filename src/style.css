@@ -27,6 +27,16 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 h3 {
   font-size: 32px;
   font-weight: 700;
@@ -101,22 +111,42 @@ ul {
   text-align: center;
 }
 
+.primary-button:hover {
+  background-color: var(--accent-color-dark);
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 2px var(--primary-text-color);
+  cursor: pointer;
+}
 .secondary-button {
   border: 2.5px solid var(--secondary-text-color);
   border-radius: 8px;
   font-weight: 700;
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   padding: 12px 24px;
   transition: 0.2s ease-out;
+}
+.secondary-button:hover {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 2px var(--accent-color);
 }
 
 .third-button {
   border-radius: 8px;
   background-color: var(--accent-color-dark);
   color: #ffffff;
-  width: 159px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   padding: 10px 16px 10px 16px;
+  transition: 0.2s ease-out;
+}
+.third-button:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 2px var(--accent-color);
 }
 
 /* nav-section */
@@ -223,7 +253,7 @@ ul {
   justify-content: space-around;
 }
 
-.search-bar {
+.content-search {
   background: #ffffff;
   width: 807px;
   height: 100px;
@@ -278,82 +308,114 @@ ul {
 /* benefit-section */
 
 .benefit-section {
+  /* border: 2px solid red; */
+  background-color: #ffffff;
   flex-direction: row;
   justify-content: center;
+  gap: 64px;
 }
 
-.benefits {
-  /* border: 2px solid red; */
+.benefit-categories {
+  /* border: 2px solid blue; */
   width: 640px;
   height: 500px;
-  margin-top: 100px;
-  margin-left: 640px;
   gap: 64px;
-  opacity: 0px;
-
-  position: relative;
   flex-direction: column;
-  gap: 64px;
-  /* width: 640px;
-  height: 500px; */
-  /* margin-top: 100px; */
-  /* margin-left: 640px; */
 }
+
 .row1,
 .row2 {
   gap: 24px;
+  height: 100%;
+  width: 100%;
 }
-
 .benefit-1,
 .benefit-2,
 .benefit-3,
 .benefit-4 {
-  /* border: 2px solid blue; */
+  /* border: 2px solid green; */
   color: var(--primary-text-color);
-  width: 308px;
-  height: 218px;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   gap: 24px;
 }
 
-/* Illustration */
-
-.Illustration {
-  
-  position: relative;
-  margin-top: 100px;
-  margin-left: 160px;
+.benefit-p {
+  color: #4d5461;
+  font-size: 16px;
+  line-height: 25px;
 }
 
+/* Illustration */
+
 .Illustration-card {
+  /* border: 2px solid green; */
+  border-radius: 8px;
   background: url(/public/images/Illustration\ home.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  /* border: 2px solid green; */
   background-color: #e0def7;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 416px;
   height: 500px;
-  top: 100px;
-  left: 160px;
 }
-
 .card-content {
   /* border: 2px solid red; */
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   width: 309px;
-  height: 212px;
+  height: 210px;
+  margin: 40px 40px 67px;
   gap: 22px;
 }
 
-.card-button {
-  width: 100%;
-  height: 100%;
-  padding: 10px 16px 10px 16px;
-  gap: 8px;
-  border-radius: 8px;
+/* property-section */
+
+.property-section {
+  border: 2px solid red;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f0effb 100%);
+}
+
+.headline {
+  border: 2px solid blue;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-direction: ;
+  width: 544px;
+  height: 98px;
+  margin-top: 80px;
+  margin-left: 448px;
+  gap: 16px;
+}
+
+.search-section {
+  border: 2px solid green;
+  /* flex-direction: column; */
+}
+
+.property-search {
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 8px;
+
+  background:#F7F7FD;
+  width: 352px;
+  height: 64px;
+  top: 250px;
+  left: 928px;
+}
+
+.search {
+  width: 110px;
+  height: 24px;
+  top: 20px;
+  left: 16px;
+  gap: 16px;
 }
