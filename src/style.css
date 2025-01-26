@@ -379,11 +379,12 @@ ul {
 
 .property-section {
   border: 2px solid red;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(180deg, #ffffff 0%, #f0effb 100%);
 }
 
+/* -> headline */
 .headline {
   border: 2px solid blue;
   flex-direction: column;
@@ -393,21 +394,82 @@ ul {
   height: 98px;
   margin-top: 80px;
   margin-left: 448px;
+  margin-bottom: 74px;
   gap: 16px;
 }
 
+/* -> search */
+
 .search-section {
   border: 2px solid green;
-  /* flex-direction: column; */
+  width: 1120px;
+  height: 60px;
+  justify-content: space-between;
+  margin-left: 160px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.segmented-control {
+  border: 1.5px solid #e0def7;
+  width: 377px;
+  height: 60px;
+  background-color: #f0effb;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.segmented-items {
+  /* border: 2px solid green; */
+  width: 361px;
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.rent {
+  border: 2px solid #e0def7;
+  border-radius: 6px;
+  background-color: #ffffff;
+  width: 115px;
+  height: 48px;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rent a {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.buy,
+.sell {
+  width: 115px;
+  height: 48px;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buy a,
+.sell a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4d5461;
 }
 
 .property-search {
   border: 2px solid var(--secondary-text-color);
   border-radius: 8px;
-
-  background:#F7F7FD;
+  background: #f7f7fd;
   width: 352px;
-  height: 64px;
+  height: 60px;
   top: 250px;
   left: 928px;
 }
@@ -418,4 +480,30 @@ ul {
   top: 20px;
   left: 16px;
   gap: 16px;
+}
+
+/* -> Listed-properties */
+
+.listed-properties {
+  /* border: 2px solid blue; */
+  width: 1128px;
+  height: 880px;
+  margin-top: 42px;
+  margin-left: 152px;
+  /* gap: 32px; */
+}
+
+.property-row1 {
+  /* border: 2px solid green; */
+  justify-content: center;
+  width: 1128px;
+  height: 424px;
+  /* gap: 24px;
+opacity: 0px; */
+}
+.property-card {
+  border: 2px solid red;
+  border-radius: 8px;
+  width: 360px;
+  height: 424px;
 }
