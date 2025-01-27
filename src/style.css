@@ -493,17 +493,34 @@ ul {
   /* gap: 32px; */
 }
 
-.property-row1 {
+.property-row1  {
   /* border: 2px solid green; */
-  justify-content: center;
+  /* justify-content: center; */
   width: 1128px;
   height: 424px;
-  /* gap: 24px;
-opacity: 0px; */
+   gap: 24px;
+opacity: 0px;
+}
+
+.property-row2  {
+  /* border: 2px solid green; */
+  /* justify-content: center; */
+  width: 1128px;
+  height: 424px;
+   gap: 24px;
+opacity: 0px;
 }
 .property-card {
   border: 2px solid red;
   border-radius: 8px;
   width: 360px;
   height: 424px;
+}
+
+.property-img1 {
+  width: 356px;
+  height: 200px;
+  background-size: cover;
+  /* margin-left: 6px; */
+  border-radius: 8px 8px 0px 0px;
 }
