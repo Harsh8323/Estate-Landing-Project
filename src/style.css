@@ -528,14 +528,9 @@ ul {
   gap: 24px;
 }
 
-.property-row2 {
-  /* border: 2px solid green; */
-  /* justify-content: center; */
-  width: 1128px;
-  height: 424px;
-  gap: 24px;
-}
-.property-card {
+.property-card-1,
+.property-card-2,
+.property-card-3 {
   border: 2px solid red;
   border-radius: 8px;
   flex-direction: column;
@@ -546,21 +541,44 @@ ul {
   /* gap: 16px; */
 }
 
-.property-img1 {
+.property-row2 {
+  /* border: 2px solid green; */
+  /* justify-content: center; */
+  width: 1128px;
+  height: 424px;
+  gap: 24px;
+}
+
+.property-card-4,
+.property-card-5,
+.property-card-6 {
+  border: 2px solid red;
+  border-radius: 8px;
+  flex-direction: column;
+  width: 360px;
+  height: 424px;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* gap: 16px; */
+}
+
+.property-img {
   width: 356px;
   height: 200px;
   background-size: cover;
   /* margin-left: 6px; */
   border-radius: 8px 8px 0px 0px;
 }
+
 .price {
   border: 2px solid green;
   width: 141px;
   height: 36px;
-  margin-top: 32px;
   margin-left: 24px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+  margin-top: 20px;
 }
+
 .price-text {
   color: var(--accent-color);
   font-size: 24px;
@@ -568,6 +586,7 @@ ul {
   line-height: 36px;
   letter-spacing: -1px;
 }
+
 
 .property-details {
   /* border: 2px solid green; */
@@ -579,15 +598,17 @@ ul {
   align-items: flex-start;
   gap: 4px;
 }
+
 .hr {
   border: 1.5px 0px 0px 0px;
-  color:#F0EFFB;
+  color: #f0effb;
   width: 304px;
   height: 0px;
   margin-top: 16px;
   /* margin-left: 24px; */
   gap: 0px;
 }
+
 .property-facilities {
   /* border: 2px solid green; */
   width: 294px;
