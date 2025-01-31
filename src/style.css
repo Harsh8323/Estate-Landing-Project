@@ -347,6 +347,7 @@ ul {
   gap: 22px;
 }
 
+
 /* 2) benefit-categories */
 .benefit-categories {
   /* border: 2px solid blue; */
@@ -387,22 +388,15 @@ ul {
 .property-section {
   background: linear-gradient(180deg, #ffffff 0%, #f0effb 100%);
   border: 2px solid red;
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  /* margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: 152px;
-  margin-right:  152px;
-  
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   gap: 32px;
 }
 
 /* -> headline */
+
 .headline {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -410,7 +404,6 @@ ul {
   height: 98px;
   margin-top: 80px;
   margin-left: 448px;
-  /* margin-right: 448px; */
   margin-bottom: 74px;
   gap: 16px;
 }
@@ -418,18 +411,19 @@ ul {
 /* -> search */
 
 .search-section {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 1120px;
   height: 60px;
   justify-content: space-between;
-  margin-left: 160px;
-  gap: 0px;
+  margin-left:auto;
+  margin-right: auto;
+  /* gap: 0px; */
   opacity: 0px;
 }
 
 .segmented-control {
   border: 1.5px solid #e0def7;
-  width: 377px;
+  width: 360px;
   height: 60px;
   background-color: #f0effb;
   gap: 10px;
@@ -438,8 +432,8 @@ ul {
 
 .segmented-items {
   /* border: 2px solid green; */
-  width: 361px;
-  height: 48px;
+  width: 360px;
+  height: 60px;
   align-items: center;
   justify-content: space-between;
   margin-left: 8px;
@@ -452,14 +446,15 @@ ul {
   border: 2px solid #e0def7;
   border-radius: 6px;
   background-color: #ffffff;
-  width: 115px;
+  width: 110px;
   height: 48px;
+  color: var(--accent-color);
   gap: 8px;
   align-items: center;
   justify-content: center;
 }
 
-.rent a {
+.rent i,a {
   font-size: 18px;
   font-weight: 700;
   color: var(--accent-color);
@@ -467,15 +462,15 @@ ul {
 
 .buy,
 .sell {
-  width: 115px;
+  width: 110px;
   height: 48px;
   gap: 8px;
   align-items: center;
   justify-content: center;
 }
 
-.buy a,
-.sell a {
+.buy a,i
+.sell i,a {
   font-size: 18px;
   font-weight: 500;
   color: #4d5461;
@@ -485,25 +480,30 @@ ul {
   border: 2px solid var(--secondary-text-color);
   border-radius: 8px;
   background: #f7f7fd;
-  width: 352px;
+  width: 360px;
   height: 60px;
   top: 250px;
   left: 928px;
+  /* gap: 16px; */
 }
 
-.search {
+.search-icon{
   width: 110px;
   height: 24px;
-  top: 20px;
-  left: 16px;
+  margin-left: 16px;
   gap: 16px;
+}
+
+.icon {
+  font-size:20px;
+  color: var(--accent-color);
 }
 
 /* -> Listed-properties */
 
 .listed-properties {
   border: 2px solid blue;
-  width: 1440px;
+  width: 100%;
   height: 1446px;
   top: 1650px;
   margin-top: 42px;
@@ -527,6 +527,30 @@ ul {
   height: 424px;
   gap: 24px;
 }
+
+
+.card .ribbon-2 {
+  /* border: 0.1rem solid crimson; */
+  background: var(--primary);
+  position: absolute;
+  left: -1.1rem;
+  top: 1.6rem;
+  width: 90%;
+  height: 3rem;
+
+  color: #fff;
+  text-align: center;
+  line-height: 3rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  /* overflow: hidden; */
+  border-radius: 2rem;
+  border-bottom-left-radius: 0;
+}
+
+
 
 .property-card-1,
 .property-card-2,
@@ -571,12 +595,13 @@ ul {
 }
 
 .price {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 141px;
   height: 36px;
   margin-left: 24px;
   margin-bottom: 2px;
   margin-top: 20px;
+  gap: 4px;
 }
 
 .price-text {
@@ -586,7 +611,6 @@ ul {
   line-height: 36px;
   letter-spacing: -1px;
 }
-
 
 .property-details {
   /* border: 2px solid green; */
@@ -611,9 +635,34 @@ ul {
 
 .property-facilities {
   /* border: 2px solid green; */
-  width: 294px;
-  height: 20px;
+  width: 300px;
+  height: 30px;
   margin-top: 50px;
   margin-left: 24px;
-  gap: 16px;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.beds,
+.bath,
+.dimensions {
+  gap: 4px;
+}
+
+.property-button {
+  border-radius: 8px 0px 0px 0px;
+  padding: 16px 32px 16px 32px;
+  width: 300px;
+  height: 80px;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+.property-button a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+
 }
