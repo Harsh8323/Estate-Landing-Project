@@ -386,7 +386,7 @@ ul {
 
 .property-section {
   background: linear-gradient(180deg, #ffffff 0%, #f0effb 100%);
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
   height: 100%;
   gap: 32px;
@@ -503,9 +503,9 @@ a {
 /* -> Listed-properties */
 
 .listed-properties {
-  border: 2px solid blue;
+  /* border: 2px solid blue;  */
   width: 100%;
-  height: 1446px;
+  height: 100%;
   top: 1650px;
   margin-top: 42px;
   gap: 32px;
@@ -523,7 +523,7 @@ a {
 
 .property-row1 {
   /* border: 2px solid green; */
-  /* justify-content: center; */
+  justify-content: space-between;
   width: 1128px;
   height: 424px;
   gap: 24px;
@@ -532,7 +532,9 @@ a {
 .property-card-1,
 .property-card-2,
 .property-card-3 {
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  /* box-shadow: 0px 2px 2px 0px #ffffff; */
+  border: 2px solid #f0effb;
   position: relative;
   border-radius: 8px;
   flex-direction: column;
@@ -540,7 +542,7 @@ a {
   height: 424px;
   align-items: center;
   /* justify-content: space-between; */
-  /* gap: 16px; */
+  gap: 8px;
 }
 
 .ribbon {
@@ -555,11 +557,9 @@ a {
   justify-content: center;
   gap: 6px;
   border-bottom-left-radius: 0;
-
   color: #ffff;
   text-align: center;
   line-height: 38px;
-  
 }
 
 .ribbon::before,
@@ -583,7 +583,7 @@ a {
 }
 
 .ribbon-text {
-  color:#ffffff;
+  color: #ffffff;
   width: 61px;
   height: 16px;
   gap: 0px;
@@ -606,7 +606,7 @@ a {
 .property-card-5,
 .property-card-6 {
   position: relative;
-  border: 2px solid red;
+  border: 2px solid #f0effb;
   border-radius: 8px;
   flex-direction: column;
   width: 360px;
@@ -616,60 +616,8 @@ a {
   /* gap: 16px; */
 }
 
-
-.ribbon {
-  position: absolute;
-  background: var(--accent-color);
-  border-radius: 8px;
-  left: -9px;
-  top: 180px;
-  width: 130px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  border-bottom-left-radius: 0;
-
-  color: #ffff;
-  text-align: center;
-  line-height: 38px;
-  
-}
-
-.ribbon::before,
-.ribbon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 40px;
-  width: 9px;
-  height: 15px;
-  border-bottom-left-radius: 8px;
-}
-
-.ribbon::before {
-  background: var(--accent-color-dark);
-}
-
-.ribbon::after {
-  background-color: var(--accent-color-dark);
-  border-top-left-radius: 8px;
-}
-
-.ribbon-text {
-  color:#ffffff;
-  width: 61px;
-  height: 16px;
-  gap: 0px;
-  opacity: 0px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  /* letter-spacing: 0.5px; */
-}
-
 .property-img {
-  width: 356px;
+  width: 358px;
   height: 200px;
   background-size: cover;
   /* margin-left: 6px; */
@@ -681,8 +629,8 @@ a {
   width: 141px;
   height: 36px;
   margin-left: 24px;
-  margin-bottom: 2px;
-  margin-top: 20px;
+  margin-bottom: 6px;
+  margin-top: 35px;
   gap: 4px;
 }
 
@@ -699,27 +647,23 @@ a {
   width: 320px;
   height: 48px;
   margin-left: 24px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 10px;
 }
 
 .hr {
-  border: 1.5px 0px 0px 0px;
-  color: #f0effb;
+  border: 1.5px solid #f0effb;
   width: 304px;
-  height: 0px;
-  margin-top: 16px;
-  /* margin-left: 24px; */
-  gap: 0px;
+  margin-top: 5px;
 }
 
 .property-facilities {
   /* border: 2px solid green; */
   width: 300px;
   height: 30px;
-  margin-top: 50px;
+  margin-top: 45px;
   margin-left: 24px;
   justify-content: space-between;
   gap: 12px;
@@ -728,7 +672,9 @@ a {
 .beds,
 .bath,
 .dimensions {
-  gap: 4px;
+  gap: 5px;
+  color: var(--accent-color);
+  font-size: 16px;
 }
 
 .property-button {
@@ -736,6 +682,7 @@ a {
   padding: 16px 32px 16px 32px;
   width: 300px;
   height: 80px;
+  margin-bottom: 100px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -746,4 +693,46 @@ a {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+}
+
+/* # user-type-section */
+
+.user-type-section {
+  border: 2px solid red;
+  background: var(--accent-color-dark);
+  width: 100%;
+  height: 788px;
+}
+
+.user-headline-section {
+  border: 2px solid green;
+  width: 1120px;
+  height: 112px;
+  margin-top: 100px;
+  margin-left: 160px;
+  justify-content: center;
+  gap:270px;
+}
+
+.user-header {
+  /* border: 2px solid red; */
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: left;
+}
+
+.user-text {
+  /* border: 2px solid red; */
+  color: #ffffff;
+  width:100%;
+  height:100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  opacity: 70%;
 }
