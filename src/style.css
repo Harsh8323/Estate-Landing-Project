@@ -386,7 +386,7 @@ ul {
 
 .property-section {
   background: linear-gradient(180deg, #ffffff 0%, #f0effb 100%);
-  /* border: 2px solid red; */
+  border: 2px solid red;
   width: 100%;
   height: 100%;
   gap: 32px;
@@ -698,29 +698,36 @@ a {
 /* # user-type-section */
 
 .user-type-section {
-  border: 2px solid red;
-  background: var(--accent-color-dark);
+  border: 2px solid green;
   width: 100%;
   height: 788px;
+  /* top: 3096px; */
 }
 
-.user-headline-section {
+.user-headline {
   border: 2px solid green;
   width: 1120px;
   height: 112px;
+  justify-content: space-between;
   margin-top: 100px;
-  margin-left: 160px;
-  justify-content: center;
-  gap: 270px;
+  margin-left: 152px;
+  margin-right: 152px;
+  /* margin-bottom: 74px; */
+  /* gap: 16px; */
 }
 
 .user-header {
-  /* border: 2px solid red; */
-  color: #ffffff;
-  width: 100%;
-  height: 100%;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 56px;
+  border: 2px solid blue;
+  width: 444px;
+  height: 112px;
+  justify-content: left;
+  align-items: flex-start;
   text-align: left;
+}
+
+.user-header-text {
+  border: 2px solid blue;
+  width: 406px;
+  height: 104px;
+  opacity: 0.7;
 }
