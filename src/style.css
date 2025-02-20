@@ -703,31 +703,3 @@ a {
   height: 788px;
   /* top: 3096px; */
 }
-
-.user-headline {
-  border: 2px solid green;
-  width: 1120px;
-  height: 112px;
-  justify-content: space-between;
-  margin-top: 100px;
-  margin-left: 152px;
-  margin-right: 152px;
-  /* margin-bottom: 74px; */
-  /* gap: 16px; */
-}
-
-.user-header {
-  border: 2px solid blue;
-  width: 444px;
-  height: 112px;
-  justify-content: left;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.user-header-text {
-  border: 2px solid blue;
-  width: 406px;
-  height: 104px;
-  opacity: 0.7;
-}
