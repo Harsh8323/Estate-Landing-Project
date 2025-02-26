@@ -14,6 +14,7 @@
   --accent-color: #7065f0;
   --accent-color-dark: #100a55;
   --padding-line-section: 20px;
+  --tertiary-text-color: #ffffff;
 }
 
 body {
@@ -385,8 +386,8 @@ ul {
 /* property-section */
 
 .property-section {
+  /* border: 2px solid red; */
   background: linear-gradient(180deg, #ffffff 0%, #f0effb 100%);
-  border: 2px solid red;
   width: 100%;
   height: 100%;
   gap: 32px;
@@ -503,10 +504,10 @@ a {
 /* -> Listed-properties */
 
 .listed-properties {
-  /* border: 2px solid blue;  */
+  border: 2px solid blue;
   width: 100%;
   height: 100%;
-  top: 1650px;
+  /* top: 1650px; */
   margin-top: 42px;
   gap: 32px;
   flex-direction: column;
@@ -697,9 +698,41 @@ a {
 
 /* # user-type-section */
 
-.user-type-section {
-  border: 2px solid green;
+.user-category-section {
+  border: 2px solid blue;
   width: 100%;
-  height: 788px;
-  /* top: 3096px; */
+  height: 100vh;
+  background: #100a55;
+}
+.user-header {
+  border: 2px solid red;
+  width: 1120px;
+  height: 112px;
+  margin-top: 100px;
+  /* margin-left: auto; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+}
+.user-headline {
+  border: 1px solid green;
+  color: #ffffff;
+  width: 444px;
+  height: 112px;
+}
+
+.user-header-text {
+  border: 1px solid green;
+  color: #ffffff;
+  width: 406px;
+  height: 104px;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0%;
+}
+
+.user-text {
+  color: #ffffff;
 }
