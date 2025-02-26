@@ -505,7 +505,7 @@ a {
 /* -> Listed-properties */
 
 .listed-properties {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 100%;
   height: 100%;
   /* top: 1650px; */
@@ -524,7 +524,7 @@ a {
 }
 
 .property-row1 {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   justify-content: space-between;
   width: 1128px;
   height: 424px;
@@ -597,7 +597,7 @@ a {
 }
 
 .property-row2 {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   /* justify-content: center; */
   width: 1128px;
   height: 424px;
@@ -704,15 +704,16 @@ a {
 
   /* position: relative; */
   border: 2px solid blue;
+
   width: 100%;
-  height: 100vh;
+  height: 788px;
 }
 
 /* User-header */
 
 .user-header {
   position: absolute;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 1120px;
   height: 112px;
   margin-top: 100px;
@@ -749,7 +750,7 @@ a {
 /* feature-cards */
 
 .features-cards {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   /* width: 100%; */
   height: 190px;
   margin-top: 276px;
@@ -887,4 +888,47 @@ a {
   line-height: 25.6px;
   letter-spacing: 0%;
   opacity: 70%;
+}
+
+/* user-hr */
+
+.user-hr {
+  margin-top: 64px;
+  border-width: 1.5px;
+  border: 1.5px solid #312f4b;
+}
+
+/* User-Stats */
+
+.user-stats {
+  /* border: 2px solid red; */
+  width: 928px;
+  height: 90px;
+  margin-top: 64px;
+  margin-left: 310px;
+  gap: 52px;
+}
+
+.stats-1,
+.stats-2,
+.stats-3 {
+  /* border: 2px solid green; */
+  color: var(--tertiary-text-color);
+  flex-direction: column;
+  gap: 8px;
+
+  /* overflow: hidden; */
+}
+
+.stats-text {
+  color: var(--tertiary-text-color);
+  opacity: 70%;
+}
+
+/* stats-hr */
+
+.stats-hr {
+  width: 64px;
+  rotate: -90deg;
+  border: 1.5px solid #ffffff;
 }
