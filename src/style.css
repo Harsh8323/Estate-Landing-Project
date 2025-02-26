@@ -361,6 +361,7 @@ ul {
 .row2 {
   gap: 24px;
   height: 100%;
+
   width: 100%;
 }
 .benefit-1,
@@ -523,7 +524,7 @@ a {
 }
 
 .property-row1 {
-  /* border: 2px solid green; */
+  border: 2px solid green;
   justify-content: space-between;
   width: 1128px;
   height: 424px;
@@ -596,7 +597,7 @@ a {
 }
 
 .property-row2 {
-  /* border: 2px solid green; */
+  border: 2px solid green;
   /* justify-content: center; */
   width: 1128px;
   height: 424px;
@@ -699,33 +700,42 @@ a {
 /* # user-type-section */
 
 .user-category-section {
+  background: #100a55;
+
+  /* position: relative; */
   border: 2px solid blue;
   width: 100%;
   height: 100vh;
-  background: #100a55;
 }
 .user-header {
+  position: absolute;
   border: 2px solid red;
   width: 1120px;
   height: 112px;
   margin-top: 100px;
-  /* margin-left: auto; */
-  /* flex-direction: column; */
-  align-items: center;
+  margin-left: 200px;
+
   justify-content: space-between;
 }
 .user-headline {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   color: #ffffff;
   width: 444px;
   height: 112px;
+  line-height: 56px;
+  letter-spacing: -1%;
+  /* text-align: left; */
+  justify-content: flex-start;
 }
 
 .user-header-text {
-  border: 1px solid green;
-  color: #ffffff;
+  /* border: 1px solid green; */
   width: 406px;
   height: 104px;
+}
+
+.user-text {
+  color: #ffffff;
   opacity: 0.7;
   font-weight: 400;
   font-size: 16px;
@@ -733,6 +743,53 @@ a {
   letter-spacing: 0%;
 }
 
-.user-text {
-  color: #ffffff;
+.features-card {
+  border: 2px solid green;
+  /* width: 100%; */
+  height: 190px;
+  margin-top: 276px;
+  margin-left: 200px;
+  gap: 32px;
+}
+
+.features-card-1 {
+  /* border: 2px solid red; */
+  background: #38308f;
+  width: 536px;
+  height: 190px;
+  border-radius: 8px;
+  padding: 32px 32px;
+  /* padding-left: 32px; */
+  flex-direction: column;
+}
+
+.features-card-details {
+  /* border: 2px solid blue; */
+  color: var(--tertiary-text-color);
+  width: 472px;
+  height: 130px;
+  align-items: flex-start;
+  gap: 24px;
+
+  /* justify-content: space-between; */
+}
+
+.features-1-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.features-card-1-content {
+  /* border: 1px solid red; */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.features-card-text {
+  color: var(--tertiary-text-color);
+  line-height: 25.6px;
+  letter-spacing: 0%;
+  opacity: 70%;
 }
