@@ -17,6 +17,32 @@
   --tertiary-text-color: #ffffff;
 }
 
+/* Custom Scrollbar for Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-text-color); /* Track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color); /* Thumb color */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color-dark); /* Darker color on hover */
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) var(--secondary-text-color);
+}
+
 body {
   font-family: "Plus Jakarta Sans";
   background-color: #ffffff;
@@ -703,7 +729,7 @@ a {
   background: #100a55;
 
   /* position: relative; */
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   flex-direction: column;
   width: 100%;
   height: 788px;
@@ -714,7 +740,8 @@ a {
 .user-header {
   position: absolute;
   /* border: 2px solid red; */
-  width: 1120px;
+  width: 85%;
+  padding-right: 130px;
   height: 112px;
   margin-top: 100px;
   /* overflow: hidden;
@@ -753,7 +780,7 @@ a {
 
 .features-cards {
   /* border: 2px solid green; */
-  width: 100%;
+  width: 85%;
   height: 190px;
   margin-top: 276px;
   margin-left: 200px;
@@ -909,7 +936,7 @@ a {
   width: 928px;
   height: 90px;
   margin-top: 64px;
-  margin-left: 310px;
+  /* margin-left: 310px; */
   gap: 52px;
 }
 
@@ -989,7 +1016,7 @@ a {
 
 .email-box-content {
   /* border: 2px solid red; */
-  width: 543px;
+  /* width: 543px; */
   height: 70px;
   align-items: center;
   justify-content: space-between;
@@ -1001,11 +1028,14 @@ a {
   width: 100%;
   height: 26px;
   opacity: 50%;
-  border: none;
+  border: none !important; /* Ensures border is removed */
+  outline: none; /* Removes the default focus outline */
   border-radius: 8px;
   padding: 16px 16px;
   color: #312f4b;
+  background: transparent; /* Ensures background blends with container */
 }
+
 .email-textarea::placeholder {
   font-family: Plus Jakarta Sans;
   color: #000929;
@@ -1031,6 +1061,7 @@ a {
   background: var(--tertiary-text-color);
   width: 100%;
   height: 560px;
+  /* overflow: hidden; */
   /* gap: 32px; */
   /* flex-direction: column; */
   align-items: center;
