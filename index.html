@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="src/media.css" />
     <title>Estate Page</title>
   </head>
   <body>
@@ -44,16 +44,16 @@
               <li><a href="#" class="primary-button">Sign Up</a></li>
             </ul>
           </div>
+          <a href="#" class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
       </nav>
       <!-- content-section -->
       <div class="content flex">
         <div class="left-content">
           <div class="left-content-text flex">
-            <h1 class="flex">
-              Buy, rent, or sell <br />
-              your property easily
-            </h1>
+            <h1 class="flex">Buy, rent, or sell your property easily</h1>
             <p class="flex">
               A great platform to buy, sell, or even rent your properties
               without any commisions.
@@ -71,8 +71,6 @@
                 <a href="#">Barcelona, Spain</a>
               </div>
               <div class="timing flex">
-                <!-- <label for="move-in-date">When</label>
-                <input type="date" id="move-in-date" name="move-in-date" placeholder="Select Move-in Date"  /> -->
                 <p>When</p>
                 <a href="#"
                   >Select Move-in Date <i class="fa-regular fa-calendar"></i
@@ -80,6 +78,21 @@
               </div>
               <div class="browse-button flex">
                 <a href="#" class="primary-button">Browse Properties</a>
+              </div>
+            </div>
+            <div class="location-search-box flex">
+              <div class="location-search-box-content flex">
+                <input
+                  class="search-box"
+                  type="search"
+                  placeholder="Search Location"
+                />
+                <button
+                  type="submit"
+                  class="primary-button location-search-btn flex"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -92,7 +105,7 @@
             <div class="properties flex">
               <img src="./public/images/property Icon.png" alt="" />
               <h4>10k+ properties</h4>
-              <p>and house ready for occupancy</p>
+              <p>ready for occupancy</p>
             </div>
           </div>
         </div>
