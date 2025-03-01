@@ -302,8 +302,8 @@ ul {
   display: none;
   border-radius: 8px;
   background: #ffffff;
-  width: 320px;
-  height: 70px;
+  width: 90%;
+  height: 45%;
   align-items: center;
   gap: 16px;
 }
@@ -438,7 +438,6 @@ ul {
 .row2 {
   gap: 24px;
   height: 100%;
-
   width: 100%;
 }
 .benefit-1,
@@ -491,7 +490,7 @@ ul {
 .search-section {
   /* border: 2px solid green; */
   width: 1120px;
-  height: 60px;
+  /* height: 60px; */
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
@@ -757,11 +756,9 @@ a {
 }
 
 .property-button {
-  border-radius: 8px 0px 0px 0px;
+  border-radius: 8px;
   padding: 16px 32px 16px 32px;
-  width: 300px;
-  height: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -772,14 +769,13 @@ a {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+  align-items: center;
 }
 
-/* # user-type-section */
+/* # user-category-section */
 
 .user-category-section {
   background: #100a55;
-
-  /* position: relative; */
   /* border: 2px solid blue; */
   flex-direction: column;
   width: 100%;
