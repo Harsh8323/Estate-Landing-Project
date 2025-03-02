@@ -27,7 +27,7 @@
   .left-content {
     display: flex;
     flex-direction: column;
-    gap: 44px;
+    gap: 24px;
     width: 100%;
     margin: 0;
     padding: 48px 24px 48px 24px;
@@ -36,7 +36,7 @@
     /* display: none; */
     /* border: 2px solid red; */
     align-items: center;
-    gap: 32px;
+    gap: 24px;
   }
   .left-content-text h1 {
     font-size: 40px;
@@ -75,47 +75,42 @@
     align-items: center;
   }
   .left-content-stats {
-    margin-top: 0;
-    /* display: none; */
+    /* margin-top: 60px; */
+    /* padding-: 20px; */
+    padding: 0;
+    padding-left: 15px;
     width: 100%;
-    height: 90%;
-    align-self: center;
+    /* height: 152px; */
     justify-content: space-between;
-    margin: 0;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .renters {
+    color: var(--accent-color);
+    width: 100%;
+    /* height: 152px; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
   }
   .numbers {
-    width: 139px;
-    height: 140px;
-    /* gap: 24px; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
   .numbers h4 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0%;
+    font-size: 18px;
   }
   .numbers p {
-    font-weight: 400;
     font-size: 14px;
-    line-height: 19.6px;
-    letter-spacing: 0px;
   }
   .properties {
-    width: 154px;
-    height: 140px;
-    /* gap: 24px; */
-  }
-  .properties h4 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0%;
-  }
-  .properties p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19.6px;
-    letter-spacing: 0px;
+    color: var(--accent-color);
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
   }
   .right-content {
     display: none;
@@ -226,14 +221,15 @@
     width: 100%;
     height: 100%;
   }
-  .property-row1,
-  .property-row2 {
+  .property-row1 {
     /* border: 2px solid blue; */
+
     width: 100%;
     height: 100%;
     flex-direction: column;
     gap: 44px;
   }
+
   .property-row2 {
     display: none;
   }
