@@ -274,6 +274,8 @@ ul {
 .left-content {
   width: 50%;
   height: 100%;
+  flex-direction: column;
+  gap: 20px;
   /* border: 2px solid green; */
   justify-content: center;
   padding-left: 150px;
@@ -283,35 +285,40 @@ ul {
 .left-content-text {
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 30px;
   width: 100%;
-  height: 200px;
+  height: 36%;
+}
+.left-content-text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.5%;
 }
 
 /* left-content-search */
 
 .left-content-search {
-  margin-top: 30px;
+  /* border: 2px solid red; */
+  /* margin-top: 30px; */
   flex-direction: column;
   align-items: flex-start;
   border-radius: 8px;
-  width: 807px;
+  width: 100%;
   gap: 4px;
-  height: 150px;
+  height: 50%;
 }
 
 .tabs {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   border-radius: 8px;
   background: #ffffff;
   font-weight: 400;
   color: var(--primary-text-color);
-  width: 297px;
-  height: 56px;
+  width: 50%;
   justify-content: space-around;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .tabs a {
@@ -327,34 +334,8 @@ ul {
 }
 
 .tabs a:hover {
-  color: #6851ff; /* Highlight active tab */
+  color: var(--accent-color);
   font-weight: bold;
-}
-
-/* Create the cursor (underline indicator) */
-.tabs::after {
-  content: "";
-  position: absolute;
-  bottom: -3px; /* Moves the underline below the tabs */
-  left: 0;
-  width: 33.33%;
-  height: 3px;
-  background: #6851ff;
-  border-radius: 2px;
-  transition: transform 0.2s ease-in-out;
-}
-
-/* Move indicator dynamically */
-.tabs a:nth-child(1).active ~ .tabs::after {
-  transform: translateX(0%);
-}
-
-.tabs a:nth-child(2).active ~ .tabs::after {
-  transform: translateX(100%);
-}
-
-.tabs a:nth-child(3).active ~ .tabs::after {
-  transform: translateX(200%);
 }
 
 .location-search-box {
@@ -362,19 +343,16 @@ ul {
   border-radius: 8px;
   background: #ffffff;
   width: 90%;
-  height: 45%;
   align-items: center;
   gap: 16px;
 }
 
 .location-search-box-content {
   /* border: 2px solid red; */
-  /* width: 543px; */
-  height: 70px;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px 16px;
+  padding: 10px 10px;
 }
 
 .search-box {
@@ -399,8 +377,8 @@ ul {
 }
 
 .location-search-btn {
-  width: 42px;
-  height: 42px;
+  width: 20%;
+  /* height: 42px; */
   gap: 10px;
   border: none;
   border-radius: 8px;
@@ -408,8 +386,8 @@ ul {
 }
 .content-search {
   background: #ffffff;
-  width: 100%;
-  height: 60%;
+  width: 52rem;
+  height: 50%;
   padding: 12px;
   border-radius: 8px;
   border: 1px 0px 0px 0px;
@@ -420,14 +398,17 @@ ul {
 
 .location {
   flex-direction: column;
-  gap: 4px;
+  align-items: flex-start;
+  gap: 5px;
 }
 .timing {
   flex-direction: column;
-  gap: 4px;
+  align-items: flex-start;
+
+  gap: 5px;
 }
 .browse-button {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   flex-direction: column;
   /* gap: 10px; */
 }
@@ -444,8 +425,9 @@ ul {
 /* left-content-stats */
 
 .left-content-stats {
+  /* border: 2px solid green; */
   /* margin-top: 60px; */
-  padding-top: 20px;
+  padding: 20px;
   width: 100%;
   /* height: 152px; */
   align-items: flex-start;
@@ -610,7 +592,18 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
+.rent a:hover,
+.buy a:hover,
+.sell a:hover {
+  color: #7065f0;
+  font-weight: bold;
+}
+.rent i:hover,
+.buy i:hover,
+.sell i:hover {
+  color: #7065f0;
+  font-weight: bold;
+}
 .rent i,
 a {
   font-size: 18px;
@@ -1060,8 +1053,6 @@ a {
   /* height: 90px; */
   justify-content: center;
   align-items: center;
-  /* margin-top: 64px; */
-  /* margin-left: 310px; */
   gap: 52px;
 }
 
@@ -1126,7 +1117,7 @@ a {
 
 .cta-text {
   color: #000929;
-  opacity: 50%;
+  opacity: 90%;
 }
 
 /* Email-Box */
